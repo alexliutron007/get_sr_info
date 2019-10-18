@@ -3,7 +3,7 @@
 """
 Created on Fri Oct 18 14:26:46 2019
 
-@author: ale.liu
+@author: alex.liu
 
 Get Tron-SR info
 
