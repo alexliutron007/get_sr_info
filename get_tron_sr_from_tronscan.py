@@ -30,7 +30,7 @@ headers={
 }
 
 
-#get 
+#get base_tron_sr_info from local file
 def read_base_tron_sr_info(tron_sr_info_path):
     read_tron_sr_info_file =  xlrd.open_workbook(tron_sr_info_path)
     tron_sr_data_from_base_data = read_tron_sr_info_file.sheet_by_name("Sheet1")
@@ -47,7 +47,7 @@ def get_tron_sr_info_from_tronscan(tron_sr_base_url):
 
     
 
-
+# write new tron sr to local file
 def write_new_tron_sr_info_to_file(tron_sr_form_tronscan_list,tron_sr_data_from_base_data,save_new_tron_sr_fiel_path):
     write_tron_sr_file = xlwt.Workbook()
     sheet1 = write_tron_sr_file.add_sheet('tron_sr_from_tronscan')
